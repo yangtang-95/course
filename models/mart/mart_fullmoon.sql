@@ -17,8 +17,8 @@ full_moon as
 select
     r.*,
     case 
-        when f.full_moon_date is null then 'not full_moon'
-        else 'full_moon'
+        when f.full_moon_date is null then 'not full moon'
+        else 'full moon'
     end as is_full_moon
 from fct_review r
 left join full_moon f
